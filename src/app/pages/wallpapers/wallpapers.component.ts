@@ -11,6 +11,7 @@ export class WallpapersComponent implements OnInit {
   constructor( private wallpapersService: WallpapersService ) { }
 
   ngOnInit() {
+    // Comentario
     this.wallpapersService.getAll().subscribe(r => this.wallpapers = r);
   }
 
